@@ -43,8 +43,14 @@ public class Main {
                     System.out.println("프로그램을 종료합니다.");
                     break;
 
+                default:
+                    System.out.println("[error]올바른 값을 입력하세요.");
+
             }
 
+            if (firstChoice == 0) {
+                choice = true;
+            }
         }
         scanner.close();
     }
