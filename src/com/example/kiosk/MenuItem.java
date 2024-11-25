@@ -7,10 +7,10 @@ public class MenuItem {
     //이름, 가격, 설명
 
     String name;
-    String price;
+    float price;
     String comment;
 
-    public MenuItem (String name, String price, String comment) {
+    public MenuItem (String name, float price, String comment) {
         this.name = name;
         this.price = price;
         this.comment = comment;
