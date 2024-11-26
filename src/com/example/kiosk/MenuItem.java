@@ -16,4 +16,9 @@ public class MenuItem {
         this.comment = comment;
     }
 
+    @Override
+    public String toString() {
+        return name;
+    }
+
 }
