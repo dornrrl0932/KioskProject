@@ -29,11 +29,11 @@ public class Kiosk {
             System.out.println(" ");
             System.out.println("[ Main MENU ]");
             for(int i = 0 ; i < menus.size();i++) {
-                System.out.println((i + 1) + "." + menus.get(i).getCategoryName());
+                System.out.println((i + 1) + ". " + menus.get(i).getCategoryName());
             }
             System.out.println("0. 종료");
             System.out.println(" ");
-            System.out.print("원하시는 카테고리 번호를 입력해주세요 :");
+            System.out.print("원하시는 카테고리 번호를 입력해주세요 : ");
 
             int choiceCategoryNumber = scanner.nextInt();
 
@@ -61,7 +61,7 @@ public class Kiosk {
 
             for (int i = 0 ; i < items.size() ; i++) {
                 MenuItem item = items.get(i);
-                System.out.println((i + 1) + "." + item.name + " | W " + item.price + " | " + item.comment);
+                System.out.println((i + 1) + "." + item.getName() + " | W " + item.getPrice() + " | " + item.getComment());
             }
             System.out.println("0. 카테고리 선택메뉴로 돌아가기");
             System.out.println(" ");
@@ -74,7 +74,7 @@ public class Kiosk {
                 back = true;
             } else if (0 < choiceMenuNumber && choiceMenuNumber <= items.size()) {
                 MenuItem selectItem = items.get(choiceMenuNumber - 1);
-                System.out.println(selectItem.name + " | W " + selectItem.price + " | W " + selectItem.comment + "를 선택하셨습니다.");
+                System.out.println("[" + selectItem.getName() + " | W " + selectItem.getPrice() + " | W " + selectItem.getComment()+ "]" + "를 선택하셨습니다.");
                 System.out.println(" ");
             } else {
                 System.out.print("입력하신 번호의 메뉴가 존재하지 않습니다. 다시 입력해주세요 : ");

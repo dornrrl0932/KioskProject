@@ -24,6 +24,7 @@ public class Main {
 
         List <MenuItem> dessertsItems = new ArrayList<>();
         dessertsItems.add(new MenuItem("Gelato",3.0F,"초코, 딸기, 바닐라"));
+        dessertsItems.add(new MenuItem("Apple Pie",2.0F,"겉바속촉 달콤한 사과파이"));
         Menu dessertsMenu = new Menu("Desserts",dessertsItems);
 
         List <Menu> allMenu = new ArrayList<>();
