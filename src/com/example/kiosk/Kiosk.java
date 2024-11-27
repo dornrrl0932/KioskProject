@@ -32,8 +32,7 @@ public class Kiosk {
                 System.out.println((i + 1) + ". " + menus.get(i).getCategoryName());
             }
             System.out.println("0. 종료");
-            System.out.println(" ");
-            System.out.print("원하시는 카테고리 번호를 입력해주세요 : ");
+            System.out.println("원하시는 카테고리 번호를 입력해주세요.");
 
             int choiceCategoryNumber = scanner.nextInt();
 
@@ -44,8 +43,9 @@ public class Kiosk {
                 Menu selectMenu = menus.get(choiceCategoryNumber - 1);
                 choiceMenu(selectMenu,scanner);
             } else {
-                System.out.print("입력하신 번호의 메뉴가 존재하지 않습니다. 다시 입력해주세요 :");
+                System.out.println("입력하신 번호의 메뉴가 존재하지 않습니다. 다시 입력해주세요.");
             }
+
         } while (!exit);
 
         scanner.close();
@@ -66,19 +66,19 @@ public class Kiosk {
             System.out.println("0. 카테고리 선택메뉴로 돌아가기");
             System.out.println(" ");
 
-            System.out.print("원하시는 메뉴의 번호를 입력해주세요 : ");
+            System.out.println("원하시는 메뉴의 번호를 입력해주세요.");
 
             int choiceMenuNumber = scanner.nextInt();
 
             if(choiceMenuNumber == 0) {
                 back = true;
+                System.out.println("카테고리 선택 화면으로 돌아갑니다.");
             } else if (0 < choiceMenuNumber && choiceMenuNumber <= items.size()) {
                 MenuItem selectItem = items.get(choiceMenuNumber - 1);
                 System.out.println("[" + selectItem.getName() + " | W " + selectItem.getPrice() + " | W " + selectItem.getComment()+ "]" + "를 선택하셨습니다.");
                 System.out.println(" ");
             } else {
-                System.out.print("입력하신 번호의 메뉴가 존재하지 않습니다. 다시 입력해주세요 : ");
-                System.out.println(" ");
+                System.out.println("입력하신 번호의 메뉴가 존재하지 않습니다. 다시 입력해주세요.");
             }
         } while (!back);
     }
