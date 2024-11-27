@@ -16,7 +16,29 @@ public class MenuItem {
         this.comment = comment;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public float getPrice() {
+        return price;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
 
     @Override
     public String toString() {

@@ -11,6 +11,13 @@ public class Kiosk {
         this.menus = menus;
     }
 
+    private List<Menu> getMenus() {
+        return menus;
+    }
+
+    private void setMenus(List<Menu> menus) {
+        this.menus = menus;
+    }
 
 
     public void start() {

@@ -21,6 +21,13 @@ public class Menu {
         return categoryName;
     }
 
+    public void setMenuItems(List<MenuItem> menuItems) {
+        this.menuItems = menuItems;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
     @Override
     public String toString() {
         return categoryName;
