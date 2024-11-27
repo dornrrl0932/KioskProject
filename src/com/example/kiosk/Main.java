@@ -34,8 +34,7 @@ public class Main {
 
         Kiosk kiosk = new Kiosk(allMenu);
 
-
-        System.out.println(allMenu.toString());
+        kiosk.start();
     }
 
 }

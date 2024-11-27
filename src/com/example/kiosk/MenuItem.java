@@ -6,15 +6,17 @@ package com.example.kiosk;
 public class MenuItem {
     //이름, 가격, 설명
 
-    String name;
-    float price;
-    String comment;
+    private String name;
+    private float price;
+    private String comment;
 
     public MenuItem (String name, float price, String comment) {
         this.name = name;
         this.price = price;
         this.comment = comment;
     }
+
+
 
     @Override
     public String toString() {
